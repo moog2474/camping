@@ -1,26 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Tent, Flame, Coffee, Wifi, Car, Waves, Utensils, Music } from 'lucide-react';
 
-const amenities = [
-    { icon: Tent, title: 'Luxury Tents', desc: 'Spacious glamping tents with comfortable beds.' },
-    { icon: Flame, title: 'Bonfire Pits', desc: 'Community and private fire pits for evening gatherings.' },
-    { icon: Utensils, title: 'BBQ Stations', desc: 'Fully equipped grilling stations for your catch of the day.' },
-    { icon: Waves, title: 'Surf Rental', desc: 'Boards and wetsuits available for all skill levels.' },
-    { icon: Wifi, title: 'Free Wi-Fi', desc: 'Stay connected even in the wild (at the main lodge).' },
-    { icon: Coffee, title: 'Morning Coffee', desc: 'Fresh local brew served every sunrise.' },
-    { icon: Car, title: 'Free Parking', desc: 'Secure parking spots for all our guests.' },
-    { icon: Music, title: 'Live Music', desc: 'Acoustic sessions every weekend by the beach.' },
-];
-
 const Amenities = () => {
+    const { t } = useTranslation();
+
+    const amenities = [
+        { icon: Tent, title: t('amenities.tents'), desc: t('amenities.tents_desc') },
+        { icon: Flame, title: t('amenities.bonfire'), desc: t('amenities.bonfire_desc') },
+        { icon: Utensils, title: t('amenities.bbq'), desc: t('amenities.bbq_desc') },
+        { icon: Waves, title: t('amenities.surf'), desc: t('amenities.surf_desc') },
+        { icon: Wifi, title: t('amenities.wifi'), desc: t('amenities.wifi_desc') },
+        { icon: Coffee, title: t('amenities.coffee'), desc: t('amenities.coffee_desc') },
+        { icon: Car, title: t('amenities.parking'), desc: t('amenities.parking_desc') },
+        { icon: Music, title: t('amenities.music'), desc: t('amenities.music_desc') },
+    ];
+
     return (
         <section id="amenities" className="py-20 bg-white">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-primary font-bold text-lg mb-2 uppercase tracking-wider">Our Amenities</h2>
+                    <h2 className="text-primary font-bold text-lg mb-2 uppercase tracking-wider">{t('amenities.heading')}</h2>
                     <h3 className="text-4xl md:text-5xl font-heading font-bold text-dark">
-                        Comfort Meets Nature
+                        {t('amenities.title')}
                     </h3>
                 </div>
 

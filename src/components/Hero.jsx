@@ -1,14 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import heroImg from '../assets/hero.png';
+import main from '../assets/img.jpeg'
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src={heroImg}
+                    src={main}
                     alt="Beautiful Beach Camp"
                     className="w-full h-full object-cover"
                 />
@@ -23,7 +27,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 drop-shadow-lg"
                 >
-                    Escape to <span className="text-secondary">Paradise</span>
+                    {t('hero.title')} <span className="text-secondary">{t('hero.subtitle')}</span>
                 </motion.h1>
 
                 <motion.p
@@ -32,7 +36,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                     className="text-lg md:text-2xl text-white/90 mb-8 font-light max-w-2xl mx-auto drop-shadow-md"
                 >
-                    Experience the ultimate beach camping adventure where the ocean meets the stars.
+                    {t('hero.description')}
                 </motion.p>
 
                 <motion.div
@@ -44,7 +48,7 @@ const Hero = () => {
                         href="#contact"
                         className="inline-block bg-accent hover:bg-orange-600 text-white text-lg font-semibold px-8 py-4 rounded-full transition-transform hover:scale-105 shadow-xl hover:shadow-2xl"
                     >
-                        Start Your Journey
+                        {t('hero.cta')}
                     </a>
                 </motion.div>
             </div>

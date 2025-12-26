@@ -1,0 +1,62 @@
+{
+    "translation": {
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "amenities": "Amenities",
+            "gallery": "Gallery",
+            "contact": "Contact",
+            "book": "Book Now"
+        },
+        "hero": {
+            "title": "Escape to",
+            "subtitle": "Paradise",
+            "description": "Experience the ultimate beach camping adventure where the ocean meets the stars.",
+            "cta": "Start Your Journey"
+        },
+        "about": {
+            "heading": "About Us",
+            "title": "Nature's Best Kept Secret",
+            "p1": "Nestled along the pristine coastline, CoastalCamp offers a unique blend of rugged adventure and serene relaxation. Wake up to the sound of waves, spend your days surfing or sunbathing, and end your nights with stories around a crackling bonfire under a blanket of stars.",
+            "p2": "Whether you're a seasoned camper or looking for a comfortable glamping experience, our site provides the perfect backdrop for making unforgettable memories.",
+            "sunny_days": "300+ Sunny Days",
+            "private_beach": "Private Beach",
+            "location": "Prime Location"
+        },
+        "amenities": {
+            "heading": "Our Amenities",
+            "title": "Comfort Meets Nature",
+            "tents": "Luxury Tents",
+            "tents_desc": "Spacious glamping tents with comfortable beds.",
+            "bonfire": "Bonfire Pits",
+            "bonfire_desc": "Community and private fire pits for evening gatherings.",
+            "bbq": "BBQ Stations",
+            "bbq_desc": "Fully equipped grilling stations for your catch of the day.",
+            "surf": "Surf Rental",
+            "surf_desc": "Boards and wetsuits available for all skill levels.",
+            "wifi": "Free Wi-Fi",
+            "wifi_desc": "Stay connected even in the wild (at the main lodge).",
+            "coffee": "Morning Coffee",
+            "coffee_desc": "Fresh local brew served every sunrise.",
+            "parking": "Free Parking",
+            "parking_desc": "Secure parking spots for all our guests.",
+            "music": "Live Music",
+            "music_desc": "Acoustic sessions every weekend by the beach."
+        },
+        "gallery": {
+            "heading": "Gallery",
+            "title": "Capture the Moment",
+            "sunny": "Sunny Days",
+            "starry": "Starry Nights",
+            "ocean": "Ocean Breeze"
+        },
+        "contact": {
+            "brand": "CoastalCamp",
+            "desc": "Experience the perfect getaway where the sand is your seat and the ocean is your view. Book your stay with us and reconnect with nature in style.",
+            "heading": "Contact Us",
+            "links": "Links",
+            "address": "123 Coastal Highway, Sunny Beach, CA 90210",
+            "copyright": "© {{year}} CoastalCamp. All rights reserved."
+        }
+    }
+}
